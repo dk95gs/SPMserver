@@ -16,7 +16,7 @@ const {createServer} = require('http');
 const port = process.env.PORT || 8080;
 var client_id = 'b572f95d2d3d4ce0bd62fa84ac633e63'; // Your client id
 var client_secret = 'b304dc01895c44ffaa95d37435fa676e'; // Your secret
-var redirect_uri = 'https://spotify-playlist-manager.vercel.app/callback'; // Your redirect uri
+var redirect_uri = 'https://spmserver.herokuapp.com/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
