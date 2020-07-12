@@ -113,7 +113,7 @@ app.get('/callback', function(req, res) {
 
         // we can also pass the token to the browser to make requests from there
         
-        res.redirect('http://localhost:3000/?' +
+        res.redirect('https://spotify-playlist-manager.vercel.app/?' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token
@@ -146,7 +146,7 @@ app.get('/refresh_token', function(req, res) {
     if (!error && response.statusCode === 200) {
       var access_token = body.access_token;
       
-      res.redirect('http://localhost:8080/?' +
+      res.redirect('https://spmserver.herokuapp.com/?' +
       querystring.stringify({
         access_token: access_token,
         refresh_token: refresh_token
